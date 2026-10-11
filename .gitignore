@@ -1,0 +1,83 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+*.env
+
+# ---- Secrets / credentials (NEVER commit) ----
+*.key
+*.pem
+*.pfx
+secrets.*
+credentials.*
+.secrets/
+*.token
+config.local.*
+
+# ---- Jupyter / data science ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- ML artifacts (keep the repo light) ----
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.h5
+*.pkl
+*.joblib
+models/
+checkpoints/
+wandb/
+mlruns/
+
+# ---- Large data / datasets ----
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.npy
+*.npz
+# (commit small example data explicitly with: git add -f path/to/small_example.csv)
+
+# ---- Caches / tooling ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.cache/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- C build artifacts ----
+*.o
+*.obj
+*.exe
+*.out
+a.out
