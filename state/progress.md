@@ -8,9 +8,10 @@
 - **Phase:** 0 — Learning method & environment
 - **Module:** [00 — Learning how to learn](../modules/00-learning-how-to-learn/)
 - **Week:** 1 (see [week-01](../curriculum/week-01.md))
-- **Lesson:** Day 2 — bits & binary — ✅ **Demonstrated** (2026-10-19) · Day 3 (hexadecimal) next
+- **Lesson:** Python Basics ladder — P1 ✅ done (2026-11-02) · **P2 (numbers & operators)** next.
+  (Day 3/hex paused until P1–P9 done.)
 - **Start date:** 2026-10-11
-- **Current project:** #1 Number-system converter — decimal↔binary done; hex next (Day 3)
+- **Current project:** #1 Number-system converter — **paused** at hex; resumes after Python basics P9
 - **Current DSA pattern:** none yet
 - **Current math topic:** number bases (binary → hex)
 
@@ -42,9 +43,8 @@
 - None.
 
 ## Next recommended action
-👉 Work through [`../lessons/day-003.md`](../lessons/day-003.md) (hexadecimal + extend the
-converter). Small carry-over: finish the Exercise C note from Day 2 (bin()/int(s,2)) and delete the
-two leftover `...` lines in converter.py.
+👉 Do **P2** in `exercises/python-basics/p02_numbers.py`: study the worked example (math operators,
+incl. `//` and `%`), run it, then solve the 4 problems. Say `REVIEW` when done. (P1 ✅.)
 
 ---
 ### Session log
