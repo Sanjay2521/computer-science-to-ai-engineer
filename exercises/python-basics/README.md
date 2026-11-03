@@ -12,7 +12,7 @@ A gentle, graded path to learn the **ABCs of Python** before tackling the number
 |------|------|---------|--------|
 | P1 | `p01_variables.py` | print & variables | ✅ |
 | P2 | `p02_numbers.py` | numbers & operators | ✅ |
-| P3 | `p03_strings.py` | strings | ⬜ |
+| P3 | `p03_strings.py` | strings | ✅ |
 | P4 | `p04_input_types.py` | input & types (`int()`, `str()`) | ⬜ |
 | P5 | `p05_conditionals.py` | `if` / `elif` / `else` | ⬜ |
 | P6 | `p06_for_loops.py` | `for` loops & `range` | ⬜ |

@@ -36,12 +36,18 @@ print("shout:", word.upper())      # -> PYTHON
 # Using the + operator (NOT an f-string this time), build a variable `full`
 # that is "Sanjay B M" (remember to glue a space " " in the middle), then print it.
 # your code here
+first = "Sanjay"
+last = " B M"
+full = first + last
+print(full)
 
 
 # Problem 2:
 # Make a variable `word` = "computer".
 # Print how many characters it has, like:  Length: 8
 # your code here
+word = "computer"
+print(len(word))
 
 
 # Problem 3:
@@ -51,6 +57,8 @@ print("shout:", word.upper())      # -> PYTHON
 #     Last: r
 # (Hint: positions start at 0; there's a handy index for the last one.)
 # your code here
+print(word[0])
+print(word[-1])
 
 
 # Problem 4 (tiny challenge):
@@ -58,3 +66,7 @@ print("shout:", word.upper())      # -> PYTHON
 # Print it THREE ways on three lines: as-is, all UPPER case, and all lower case.
 # (Hint: .upper() and .lower() give you back a new string — print those.)
 # your code here
+name = "Sanjay"
+print(name)
+print(name.upper())
+print(name.lower())
