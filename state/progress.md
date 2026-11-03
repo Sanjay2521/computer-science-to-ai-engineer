@@ -8,7 +8,7 @@
 - **Phase:** 0 — Learning method & environment
 - **Module:** [00 — Learning how to learn](../modules/00-learning-how-to-learn/)
 - **Week:** 1 (see [week-01](../curriculum/week-01.md))
-- **Lesson:** Python Basics ladder — P1 ✅, P2 ✅, P3 ✅ (2026-11-03) · **P4 (input & types)** next.
+- **Lesson:** Python Basics ladder — P1–P5 ✅ (2026-11-03) · **P6 (for loops & range)** next.
   (Day 3/hex paused until P1–P9 done.)
 - **Start date:** 2026-10-11
 - **Current project:** #1 Number-system converter — **paused** at hex; resumes after Python basics P9
@@ -43,9 +43,9 @@
 - None.
 
 ## Next recommended action
-👉 Do **P4** in `exercises/python-basics/p04_input_types.py`: study the worked example (input()
-returns a string; convert with int()/float()), run it, then solve the 4 problems. Say `REVIEW`
-when done. (P1 ✅, P2 ✅, P3 ✅.) Note: this file WAITS for keyboard input when run.
+👉 Do **P6** in `exercises/python-basics/p06_for_loops.py`: study the worked example (range,
+for-loops, accumulator, looping over a string), run it, then solve the 4 problems. Say `REVIEW`
+when done. (P1–P5 ✅.)
 
 ---
 ### Session log
