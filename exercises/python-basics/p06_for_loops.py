@@ -38,17 +38,27 @@ for char in "cat":
 # Print the numbers 1 to 10, each on its own line.
 # (Hint: what range gives 1..10? Remember it stops BEFORE the end value.)
 # your code here
+for i in range(1, 11):
+    print(i)
 
 
 # Problem 2:
 # Add up all the numbers from 1 to 100 and print the total.
 # (Hint: the accumulator pattern above. The answer is 5050.)
 # your code here
+total = 0
+for i in range(1, 101):
+    total = total + i
+print(total)
+
 
 
 # Problem 3:
 # Loop over the word "python" and print each character on its own line.
 # your code here
+word = "python"
+for i in word:
+    print(i)
 
 
 # Problem 4 (tiny challenge):
@@ -56,3 +66,9 @@ for char in "cat":
 # (Hint: loop 1..20, use an if with % 2 == 0, and keep a counter you add 1 to.
 #  Expected answer: 10. Attempt first; HINT if stuck.)
 # your code here
+count = 0
+for i in range(1, 21):
+    if i % 2 == 0:
+        count = count + 1
+print(count)
+

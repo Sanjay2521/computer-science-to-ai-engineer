@@ -15,7 +15,7 @@ A gentle, graded path to learn the **ABCs of Python** before tackling the number
 | P3 | `p03_strings.py` | strings | ✅ |
 | P4 | `p04_input_types.py` | input & types (`int()`, `str()`) | ✅ |
 | P5 | `p05_conditionals.py` | `if` / `elif` / `else` | ✅ |
-| P6 | `p06_for_loops.py` | `for` loops & `range` | ⬜ |
+| P6 | `p06_for_loops.py` | `for` loops & `range` | ✅ |
 | P7 | `p07_while_loops.py` | `while` loops | ⬜ |
 | P8 | `p08_lists.py` | lists | ⬜ |
 | P9 | `p09_functions.py` | functions (`def`, `return`) | ⬜ |
