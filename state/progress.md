@@ -8,7 +8,7 @@
 - **Phase:** 0 — Learning method & environment
 - **Module:** [00 — Learning how to learn](../modules/00-learning-how-to-learn/)
 - **Week:** 1 (see [week-01](../curriculum/week-01.md))
-- **Lesson:** Python Basics ladder — P1 ✅ done (2026-11-02) · **P2 (numbers & operators)** next.
+- **Lesson:** Python Basics ladder — P1 ✅, P2 ✅ (2026-11-03) · **P3 (strings)** next.
   (Day 3/hex paused until P1–P9 done.)
 - **Start date:** 2026-10-11
 - **Current project:** #1 Number-system converter — **paused** at hex; resumes after Python basics P9
@@ -43,8 +43,8 @@
 - None.
 
 ## Next recommended action
-👉 Do **P2** in `exercises/python-basics/p02_numbers.py`: study the worked example (math operators,
-incl. `//` and `%`), run it, then solve the 4 problems. Say `REVIEW` when done. (P1 ✅.)
+👉 Do **P3** in `exercises/python-basics/p03_strings.py`: study the worked example (len, indexing,
+upper/lower), run it, then solve the 4 problems. Say `REVIEW` when done. (P1 ✅, P2 ✅.)
 
 ---
 ### Session log

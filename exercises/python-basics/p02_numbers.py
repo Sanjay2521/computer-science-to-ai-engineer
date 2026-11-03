@@ -36,6 +36,9 @@ print("2 ** 8 =", 2 ** 8)   # -> 256   (remember this number from Day 2!)
 # A rectangle has width = 8 and height = 5 (make them variables).
 # Print its area like:  Area: 40
 # your code here
+width = 8
+height = 5 
+print("Area of rectangle: ", height*width)
 
 
 # Problem 2:
@@ -43,6 +46,9 @@ print("2 ** 8 =", 2 ** 8)   # -> 256   (remember this number from Day 2!)
 # Print the result of NORMAL division x / y, and look at the output.
 # Then in a comment below your code, write: is it a whole number or a decimal?
 # your code here
+x = 17
+y = 5
+print("x / y =", x / y)
 
 
 # Problem 3:
@@ -51,6 +57,8 @@ print("2 ** 8 =", 2 ** 8)   # -> 256   (remember this number from Day 2!)
 #     Quotient: 3
 #     Remainder: 2
 # your code here
+print("x // y =", x // y)
+print("x % y =", x % y) 
 
 
 # Problem 4 (tiny challenge):
@@ -60,3 +68,9 @@ print("2 ** 8 =", 2 ** 8)   # -> 256   (remember this number from Day 2!)
 # (Hint: 1 minute = 60 seconds. Which operator gives whole minutes? Which gives the leftover?
 #  Attempt first; ask for a HINT only if stuck.)
 # your code here
+total_seconds = 125
+minutes = total_seconds // 60
+seconds = total_seconds % 60
+print(f"{minutes} minutes and {seconds} seconds")
+
+

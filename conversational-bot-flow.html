@@ -1,0 +1,88 @@
+<!-- inc_resolution_bot — conversational flow (email-safe HTML table block diagram) -->
+<!-- Open in a browser, Ctrl+A, Ctrl+C, then paste into Outlook. Tables + colors survive. -->
+<table role="presentation" cellpadding="0" cellspacing="10" border="0" width="720" align="center"
+       style="font-family:Segoe UI,Arial,sans-serif;">
+  <!-- headers -->
+  <tr>
+    <td width="330" align="center" style="color:#166534;font-weight:bold;font-size:15px;">
+      PATH A &mdash; PROACTIVE<br><span style="color:#64748b;font-weight:normal;font-size:12px;">a ticket arrives</span>
+    </td>
+    <td width="40"></td>
+    <td width="330" align="center" style="color:#5b35a6;font-weight:bold;font-size:15px;">
+      PATH B &mdash; REACTIVE<br><span style="color:#64748b;font-weight:normal;font-size:12px;">conversation in Teams</span>
+    </td>
+  </tr>
+  <!-- row 1 -->
+  <tr>
+    <td bgcolor="#2ea043" style="background:#2ea043;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #166534;">
+      <b>1 &middot; Scheduler / poller</b> finds a new incident
+    </td>
+    <td></td>
+    <td bgcolor="#8957e5" style="background:#8957e5;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #5b35a6;">
+      <b>Engineer in Teams</b><br>@mention &middot; reply in thread &middot; clicks a card button
+    </td>
+  </tr>
+  <tr><td align="center" style="color:#2ea043;font-size:18px;">&#9660;</td><td></td><td align="center" style="color:#8957e5;font-size:18px;">&#9660;</td></tr>
+  <!-- row 2 -->
+  <tr>
+    <td bgcolor="#2ea043" style="background:#2ea043;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #166534;">
+      <b>2 &middot; Gates (automatic)</b><br>Eligible? Enough detail? &nbsp; no &rarr; stop / post an RFI
+    </td>
+    <td></td>
+    <td bgcolor="#8957e5" style="background:#8957e5;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #5b35a6;">
+      <b>Azure Bot Service</b> &rarr; bot endpoint (on the VM)
+    </td>
+  </tr>
+  <tr><td align="center" style="color:#2ea043;font-size:18px;">&#9660;</td><td></td><td align="center" style="color:#8957e5;font-size:18px;">&#9660;</td></tr>
+  <!-- row 3 -->
+  <tr>
+    <td bgcolor="#2ea043" style="background:#2ea043;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #166534;">
+      <b>3 &middot; Call the shared engine</b>
+    </td>
+    <td></td>
+    <td bgcolor="#8957e5" style="background:#8957e5;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #5b35a6;">
+      <b>Figure out intent</b> &rarr; call the <b>same</b> engine
+    </td>
+  </tr>
+  <tr><td align="center" style="color:#1f6feb;font-size:18px;">&#9660;</td><td></td><td align="center" style="color:#1f6feb;font-size:18px;">&#9660;</td></tr>
+  <!-- shared engine (full width) -->
+  <tr>
+    <td colspan="3" bgcolor="#1f6feb" align="center" style="background:#1f6feb;color:#fff;font-size:13px;padding:14px;border-radius:8px;border:1px solid #0b3d91;">
+      <b>ONE SHARED ENGINE &mdash; ResolutionService</b><br>validity gate &rarr; retrieve (team Q++ knowledge base) &rarr; suggest a grounded answer
+    </td>
+  </tr>
+  <tr><td colspan="3" align="center" style="color:#1f6feb;font-size:18px;">&#9660;</td></tr>
+  <!-- deliver -->
+  <tr>
+    <td colspan="3" bgcolor="#334155" align="center" style="background:#334155;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #1e293b;">
+      <b>Answer delivered</b> &nbsp;&mdash;&nbsp; Path A: ServiceNow <b>work note</b> + <b>Teams card</b> &nbsp;|&nbsp; Path B: <b>reply in the Teams thread</b> (multi-turn)
+    </td>
+  </tr>
+  <tr><td colspan="3" align="center" style="color:#ca6e0a;font-size:18px;">&#9660;</td></tr>
+  <!-- decide -->
+  <tr>
+    <td colspan="3" bgcolor="#ca6e0a" align="center" style="background:#ca6e0a;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #8a4b06;">
+      <b>ENGINEER DECIDES (in Teams)</b><br>Approve &middot; Edit &middot; Reject &middot; Reassign &middot; Escalate &middot; &ldquo;Worked&rdquo; / &ldquo;Didn&rsquo;t&rdquo;
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="color:#ca6e0a;font-size:18px;">&#9660;</td><td></td>
+    <td align="center" style="color:#ca6e0a;font-size:18px;">&#9660;</td>
+  </tr>
+  <!-- act | feedback -->
+  <tr>
+    <td bgcolor="#475569" style="background:#475569;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #334155;">
+      <b>If approved &mdash; act</b><br>policy gate &rarr; do it (work note / reassign) &rarr; verify &rarr; update the Teams card
+    </td>
+    <td></td>
+    <td bgcolor="#0d9488" style="background:#0d9488;color:#fff;font-size:13px;padding:12px;border-radius:8px;border:1px solid #0b7066;">
+      <b>Feedback</b><br>track the reply &rarr; validate &rarr; upload the approved example to the team&rsquo;s Q++ memory
+    </td>
+  </tr>
+  <!-- loop note (no crossing line) -->
+  <tr>
+    <td colspan="3" align="center" style="color:#0d9488;font-size:12px;padding-top:6px;">
+      &#8635; Validated feedback improves the team&rsquo;s Q++ knowledge base &mdash; better answers next time.
+    </td>
+  </tr>
+</table>
